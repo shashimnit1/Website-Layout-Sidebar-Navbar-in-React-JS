@@ -3,10 +3,10 @@ import React from 'react'
 const Page_3 = () => {
   return (
     <>
-    <div className='body'>
+      <div className='body3'>
         <h1>Hello this is Page_3</h1>
-    </div>
-</>
+      </div>
+    </>
   )
 }
 

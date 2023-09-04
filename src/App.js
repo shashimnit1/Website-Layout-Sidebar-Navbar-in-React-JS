@@ -1,12 +1,16 @@
 import React from 'react'
+import "./App.css"
 import Nav from './Nav'
 import { Routes, Route } from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import "./Nav.css"
 import Homepage from "./Homepage"
 import Page_1 from './Page_1.jsx';
 import Page_2 from './Page_2.jsx';
 import Page_3 from './Page_3.jsx';
 import Page_4 from './Page_4.jsx';
+import Sidebar from './Sidebar';
+import SideNav from './SideNav';
 
 
 const ErrorPage = () => {
@@ -25,15 +29,19 @@ const App = () => {
   return (
     <div>
       <Nav />
-      <Routes>
-        <Route exact path="/" element={<Homepage />} />
-        <Route exact path="/page_1" element={<Page_1 />} />
-        <Route exact path="/page_2" element={<Page_2 />} />
-        <Route exact path="/page_3" element={<Page_3 />} />
-        <Route exact path="/page_4" element={<Page_4 />} />
-
-        <Route path="/*" element={<ErrorPage />} />
-      </Routes>
+      <div className='panel'>
+        <SideNav />
+        <div >
+          <Routes>
+            <Route exact path="/" Component={Homepage} />
+            <Route exact path="/page_1" Component={Page_1} />
+            <Route exact path="/page_2" Component={Page_2} />
+            <Route exact path="/page_3" Component={Page_3} />
+            <Route exact path="/page_4" Component={Page_4} />
+            <Route path="/*" element={() => <ErrorPage />} />
+          </Routes>
+        </div>
+      </div>
     </div>
   );
 }
