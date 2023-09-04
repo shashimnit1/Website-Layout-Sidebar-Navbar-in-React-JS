@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Website-Layout-Sidebar-Navbar-in-React-JS/static/css/main.d99929c7.css",
+    "main.js": "/Website-Layout-Sidebar-Navbar-in-React-JS/static/js/main.fb8a0be4.js",
+    "index.html": "/Website-Layout-Sidebar-Navbar-in-React-JS/index.html",
+    "main.d99929c7.css.map": "/Website-Layout-Sidebar-Navbar-in-React-JS/static/css/main.d99929c7.css.map",
+    "main.fb8a0be4.js.map": "/Website-Layout-Sidebar-Navbar-in-React-JS/static/js/main.fb8a0be4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d99929c7.css",
+    "static/js/main.fb8a0be4.js"
+  ]
+}
